@@ -1,0 +1,9 @@
+RAM-Coder ist ein Programm, was den in der Algorithmen I vorlesung in Karlsruhe vorgestellten RAM-Code ausführen kann :-)
+
+Was an Syntax erlaubt ist, entnimmt man am besten den Beispielen im verzeichnis test.
+
+Ausführen tut man das programm am besten in der Konsole mit: 
+
+perl ramcoder.pl irgendwas.rc
+
+Vielleicht mach dem ein oder anderen dieser Unsinn ja doch spass ;)
