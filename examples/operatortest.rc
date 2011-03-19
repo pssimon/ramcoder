@@ -1,0 +1,9 @@
+#!./ramcoder.pl
+R1 = 4
+R2 = - R1
+R3 = R1 - R2
+R1 = R2 < R3
+R2 = R3 - R1
+R2 = R2 xor R3
+R2 = R2 << R1
+print R2

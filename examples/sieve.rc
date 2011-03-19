@@ -1,0 +1,50 @@
+S = 1000
+R10 = 1
+R4 = S[R10]
+R2 = R4
+initialisierung:
+R10 = 1
+R3 = R2 - R10
+JZ weiter, R3
+R10 = 1
+S[R2] = R10
+R10 = 1
+R2 = R2 - R10
+J initialisierung
+
+weiter:
+R2 = 2
+sieben:
+R3 = R2 * R2
+R3 = R3 <= R4
+JZ fertig, R3
+
+R5 = S[R2]
+JZ ueberspringe, R5
+
+R10 = 2
+R3 = R10 * R2
+markiere:
+R5 = R3 <= R4
+JZ ueberspringe, R5
+R10 = 0
+S[R3] = R10
+R3 = R3 + R2
+J markiere
+
+ueberspringe:
+R10 = 1
+R2 = R2 + R10
+J sieben
+
+fertig:
+R2 = 2
+ausgabe:
+R5 = S[R2]
+JZ nichtprim, R5
+print R2                        #Bisher nur support für printen von einzelnen registern.
+nichtprim:
+R10 = 1
+R2 = R2 + R10
+R3 = R2 > R4
+JZ ausgabe, R3

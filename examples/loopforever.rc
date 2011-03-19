@@ -1,0 +1,4 @@
+R1 = 1337
+loop: 
+print R1
+J loop #OH NO
